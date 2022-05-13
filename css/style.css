@@ -16,8 +16,8 @@ body {
 
 .hero {
   background-color: #c6f0fc;
-  padding: 9.6rem 0;
-  height: 90vh;
+  padding: 4rem 0;
+  height: 88vh;
 }
 
 .hero-inner {
@@ -27,6 +27,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 9.6rem;
+  padding: 0 2.5rem;
 }
 
 .heading-primary {
@@ -99,4 +100,37 @@ body {
 
 .info span {
   color: #143e49;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c6f0fc;
+  height: 9rem;
+  padding: 0 4.8rem;
+}
+
+.logo-img {
+  height: 3rem;
+  width: 10rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: blue;
 }
