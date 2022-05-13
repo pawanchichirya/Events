@@ -14,10 +14,16 @@ body {
   color: #555;
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
 .hero {
   background-color: #c6f0fc;
   padding: 4rem 0;
-  height: 88vh;
+  height: 100vh;
 }
 
 .hero-inner {
@@ -133,4 +139,109 @@ body {
 
 .nav-link:hover {
   color: blue;
+}
+
+/* how it works section */
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 4rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.secondary-heading {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+  font-size: 4.4rem;
+  line-height: 4rem;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #143e49;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.8rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.step-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.step-imagebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-imagebox::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #c6f0fc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.step-imagebox::after {
+  content: "";
+  display: block;
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #044f64;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
